@@ -259,7 +259,7 @@
         cartTotal() {
           return this.cart.reduce((s, i) => s + i.price, 0);
         },
-        canCheckout() {
+        canCheckout() {   // Validates all checkout fields before allowing order submission
           const firstNameValid = /^[A-Za-z\s]+$/.test(this.firstName.trim());
           const lastNameValid = /^[A-Za-z\s]+$/.test(this.lastName.trim());
           const phoneValid = /^\d+$/.test(this.phone.trim());
