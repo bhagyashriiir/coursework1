@@ -114,6 +114,7 @@
       </div>
 
       <!-- Cart Items -->
+      <!-- Added function to handle adding lessons to cart -->
       <div v-else-if="cart.length > 0" class="grid">
         <div class="card" v-for="item in cart" :key="item.cartId">
           <div class="lesson-info">
