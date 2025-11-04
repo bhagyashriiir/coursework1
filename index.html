@@ -226,7 +226,7 @@
           searchQuery: ''
         };
       },
-      computed: {
+      computed: {    // These computed values dynamically update sorting, totals, and validation as data changes
         sortedLessons() {
           const query = this.searchQuery.trim().toLowerCase();
           let filtered = this.lessons.filter(l => {
